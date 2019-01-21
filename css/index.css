@@ -69,3 +69,35 @@
     height: 4rem;
     background: rgba(48, 47, 47, 0.7)
 }
+
+
+@media (max-width: 450px) { 
+    .floatButtonGroup{
+        opacity: 0;
+        display: none;
+    }
+
+    .search_button{
+        
+        display: none;
+    }
+
+    .seperator{
+        display: none;
+    }
+}
+
+
+@media (max-width: 767px) { 
+
+ }
+
+
+@media (max-width: 991px) { 
+
+ }
+
+
+@media (max-width: 1199px) { 
+
+}
