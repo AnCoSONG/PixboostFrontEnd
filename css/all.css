@@ -1,0 +1,50 @@
+html {
+    font-size: 1rem;
+    word-wrap: break-word;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
+
+@font-face{
+  font-family: HanyiSongYunHeiW;
+  src:url(../res/font/汉仪宋韵朗黑W.ttf);
+}
+
+@font-face{
+  font-family: PingFang Bold;
+  src: url(../res/font/PingFang\ Bold.ttf);
+
+}
+
+@font-face{
+  font-family: PingFang ExtraLight;
+  src: url(../res/font/PingFang\ ExtraLight.ttf);
+}
+
+@font-face{
+  font-family: PingFang Regular;
+  src: url(../res/font/PingFang\ Regular.ttf);
+}
+a{
+  white-space:nowrap;
+}
+
+a:hover{
+  text-decoration: none;
+}

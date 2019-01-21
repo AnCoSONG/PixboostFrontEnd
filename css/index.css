@@ -1,0 +1,71 @@
+.background#background{
+    position: absolute;
+    background-position: 0 0;
+    width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+    height: calc(100vh);
+    background: url(../res/img/index/003.jpg) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.logo-search{
+    position: absolute;
+    z-index: 10;
+    left: calc(5vw);
+    top: calc(5vh);
+}
+.logo{
+    position: relative; 
+    stroke: 1px #323232;
+    -webkit-text-stroke: 1px #323232; 
+    font: 2rem sans-serif; 
+    font-weight: 600;
+    color:transparent; 
+    letter-spacing: 0.5rem;
+}
+
+.logo:hover{
+    color:transparent;
+    cursor: default;
+}
+
+.user-description{
+    padding: 0rem;
+}
+
+.user-icon{
+    background-image: url(../res/img/index/004.jpg);
+    background-size: cover;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    border:none;
+    border-radius: 50%;
+}
+.pix-title{
+    color:white;
+}
+
+.pix-title:hover{
+    color:rgb(182, 182, 182);
+}
+
+.username{
+    color:white;
+}
+
+.username:hover {
+    color:rgb(182, 182, 182);
+    cursor: pointer;
+}
+
+.floatButtonGroup{
+    width:4rem;
+}
+
+.floatButton{
+    height: 4rem;
+    background: rgba(48, 47, 47, 0.7)
+}
