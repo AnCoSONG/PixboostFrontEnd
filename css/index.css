@@ -1,11 +1,12 @@
 .background#background{
     position: absolute;
-    background-position: 0 0;
+    background-position: center center;
     width: 100%;
     margin-left: -15px;
     margin-right: -15px;
     height: calc(100vh);
-    background: url(../res/img/index/003.jpg) no-repeat center center;
+    background-repeat: no-repeat;
+    background-image: url(../res/img/index/003.jpg);
     background-size: cover;
     z-index: 1;
 }
