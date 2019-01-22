@@ -89,7 +89,7 @@
     margin-bottom: 0;
     width:363px;
     text-align: center;
-    
+    z-index: 100;
     background-color: rgba(255, 255, 255, 0.918);
     
 
