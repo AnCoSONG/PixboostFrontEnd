@@ -1,25 +1,31 @@
 html {
     font-size: 1rem;
     word-wrap: break-word;
+    transition: 200ms,ease-in-out;
   }
+
+  @media (max-width: 575px) { 
+    html{
+      font-size: 0.8rem;
+    }
+   }
   
-  @include media-breakpoint-up(sm) {
-    html {
-      font-size: 1.2rem;
+
+  @media (max-width: 767px) { 
+    html{
+      font-size: 1.0rem;
     }
   }
   
-  @include media-breakpoint-up(md) {
-    html {
-      font-size: 1.4rem;
-    }
-  }
+ 
+  @media (max-width: 991px) { 
+    font-size: 1.2rem;
+   }
   
-  @include media-breakpoint-up(lg) {
-    html {
-      font-size: 1.6rem;
-    }
-  }
+ 
+  @media (max-width: 1199px) { 
+    font-size: 1.3rem;
+   }
 
 
 
@@ -29,19 +35,29 @@ html {
 }
 
 @font-face{
-  font-family: PingFang Bold;
+  font-family: PingFangBold;
   src: url(../res/font/PingFang\ Bold.ttf);
 
 }
 
 @font-face{
-  font-family: PingFang ExtraLight;
+  font-family: PingFangExtraLight;
   src: url(../res/font/PingFang\ ExtraLight.ttf);
 }
 
 @font-face{
-  font-family: PingFang Regular;
+  font-family: PingFangRegular;
   src: url(../res/font/PingFang\ Regular.ttf);
+}
+
+@font-face{
+  font-family: BauhausStd-Light;
+  src: url(../res/font/BauhausStd-Light.otf);
+}
+
+@font-face{
+  font-family: ChickenAOE;
+  src: url(../res/font/ChickenScratchAOE.otf);
 }
 a{
   white-space:nowrap;

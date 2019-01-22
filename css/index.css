@@ -1,5 +1,5 @@
 .background#background{
-    position: absolute;
+    position: fixed;
     background-position: center center;
     width: 100%;
     margin-left: -15px;
@@ -8,13 +8,13 @@
     background-repeat: no-repeat;
     background-image: url(../res/img/index/003.jpg);
     background-size: cover;
-    z-index: 1;
+    z-index: -1;
 }
 
 .logo-search{
-    position: absolute;
+    position: relative;
     z-index: 10;
-    left: calc(5vw);
+    margin-left: calc(5vw);
     top: calc(5vh);
 }
 .logo{
@@ -71,6 +71,51 @@
     background: rgba(48, 47, 47, 0.7)
 }
 
+.form-control{
+    display: inline;
+}
+
+.form-control::-webkit-input-placeholder{
+    color:rgb(219, 219, 219);
+}
+
+
+
+.center-form{
+    position: relative;
+    margin-top: 15vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    width:363px;
+    text-align: center;
+    
+    background-color: rgba(255, 255, 255, 0.918);
+    
+
+} 
+
+.logo-slogen .form-logo{
+    display: inline-block;
+    width:auto;
+}
+
+.noAccount{
+    color:#323232;
+}
+
+.noAccount:hover{
+    color:rgb(182, 182, 182);
+}
+
+.forgetPassword{
+    color:#323232;
+}
+
+.forgetPassword:hover{
+    color:rgb(182, 182, 182);
+}
+
 
 @media (max-width: 450px) { 
     .floatButtonGroup{
@@ -78,19 +123,22 @@
         display: none;
     }
 
+    
+
     .search_button{
-        
         display: none;
     }
-
     .seperator{
         display: none;
     }
 }
 
 
-@media (max-width: 767px) { 
-
+@media (max-width: 825px) { 
+    .search-content{
+        display: none;
+        opacity: 0;;
+    }
  }
 
 

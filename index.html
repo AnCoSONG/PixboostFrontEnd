@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
     <script src="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script src="js/jquery.timer.min.js"></script>
     <title>PIXBOOST,发现美</title>
@@ -20,29 +21,124 @@
             <span style="font: 2.5rem sans-serif; font-weight: 300;" class="seperator">
                 |
             </span>
-            <span style="font: 2.5rem sans-serif; font-weight: 300;" class="search_button">
+        <span style="font: 2.5rem sans-serif; font-weight: 300;" class="search_button">
                 <!-- 待更改-->
-                <a href="#">
-                    <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1548075600585" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3081" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40"><defs><style type="text/css"></style></defs><path d="M420.575778 754.287185c85.539188 0 166.263721-31.417547 229.042533-88.756463l274.137591 274.128381c2.739391 2.739391 6.329149 4.109598 9.917884 4.109598s7.17747-1.370207 9.917884-4.109598c5.478781-5.478781 5.478781-14.355963 0-19.834744L669.285233 645.525086c123.846656-133.151579 121.31909-342.045213-8.290827-471.662293-64.24521-64.21758-149.626809-99.587136-240.418628-99.587136-90.806145 0-176.187745 35.368532-240.418628 99.587136-132.558062 132.565225-132.558062 348.273055 0 480.83828C244.388033 718.91763 329.769632 754.287185 420.575778 754.287185zM199.991893 193.697537c58.930157-58.916854 137.270387-91.367941 220.583884-91.367941 83.299171 0 161.640424 32.451086 220.583884 91.367941 121.613802 121.627105 121.613802 319.540663 0 441.167768-58.94346 58.916854-137.284713 91.367941-220.583884 91.367941-83.313497 0-161.653727-32.451086-220.583884-91.367941C78.378092 513.238201 78.378092 315.324642 199.991893 193.697537z" p-id="3082" fill="#323232"></path></svg>
-                </a>
-                <!-- 待更改 -->
-            </span>  
+            
+                <div class="search-bar" style="display: inline;">
+                    <a href="#" class="search-icon">
+                        <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1548075600585" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3081" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40"><defs><style type="text/css"></style></defs><path d="M420.575778 754.287185c85.539188 0 166.263721-31.417547 229.042533-88.756463l274.137591 274.128381c2.739391 2.739391 6.329149 4.109598 9.917884 4.109598s7.17747-1.370207 9.917884-4.109598c5.478781-5.478781 5.478781-14.355963 0-19.834744L669.285233 645.525086c123.846656-133.151579 121.31909-342.045213-8.290827-471.662293-64.24521-64.21758-149.626809-99.587136-240.418628-99.587136-90.806145 0-176.187745 35.368532-240.418628 99.587136-132.558062 132.565225-132.558062 348.273055 0 480.83828C244.388033 718.91763 329.769632 754.287185 420.575778 754.287185zM199.991893 193.697537c58.930157-58.916854 137.270387-91.367941 220.583884-91.367941 83.299171 0 161.640424 32.451086 220.583884 91.367941 121.613802 121.627105 121.613802 319.540663 0 441.167768-58.94346 58.916854-137.284713 91.367941-220.583884 91.367941-83.313497 0-161.653727-32.451086-220.583884-91.367941C78.378092 513.238201 78.378092 315.324642 199.991893 193.697537z" p-id="3082" fill="#323232"></path></svg>
+                    </a> 
+                    <form style="display: inline;">
+                            <input class="my-3 search-content form-control" type="text" name="" id="content" 
+                            style="display:none; width: 16rem;position: relative;top:-0.4rem;" placeholder="Search in PIXBOOST"> 
+                         
+                    </form>
+                    
+                    
+                </div>
+            
+            <!-- 待更改 -->
+                
+        </span>
+            
         </div>
         
+        <div class="logInCard center-form p-3 shadow" style="display: none;">
+            <a href="javascript:;" class="close mb-3" id="closeLoginCard" style="margin-top: -0.5rem;">
+                <span aria-hidden="true">&times;</span>
+            </a>
+            <div class="logo-slogen">
+                <div class="form-logo ml-3 mt-3" style="font-family: BauhausStd-Light; letter-spacing: 0.4rem;font-size: 3rem; color:#00bffe;">
+                    PIXBOOST
+                </div>
+                <div class="slogen mb-3">
+                    <p class="text-uppercase" style="font-family: ChickenAOE;">Find Beauty!</p>
+                    
+                </div>
+            </div>
+            <div class="logInComponent my-4 mx-3">
+                <form>
+                    <div class="input-group mt-3">
+                        <input type="text" class="form-control" id="logIn" aria-label="Text input with dropdown button" placeholder="用户名、手机号或者邮箱">
+                        
+                    </div>
+                    <div class="input-group mt-3">
+                        <input type="password" class="form-control" id="logIn" aria-label="Text input with dropdown button" placeholder="密码">
+                    </div>
+                    <ul class="errorList_LOGIN"></ul>
+                    <button class="btn btn-primary btn-block">登录</button>
+                    <div class="someFunction">
+                            <div class="text-left" style="display: inline-block;">
+                                    <a href="javascript:;" class="noAccount" onclick="openSignUp();">
+                                        <small>没有账户？</small>
+                                    </a>
+                            </div>
+                            <div class="text-right" style="display: inline-block;">  
+                                <a href="javascript:;" class="forgetPassword">
+                                    <small>忘记密码？</small>
+                                </a>
+                                    
+                            </div>
+                    </div>
+                    
+            </div>
+                    
+                    
+            </form>    
+        </div>
+        <div class="signUpCard p-3 center-form shadow" style="display: none;">
+                <a href="javascript:;" class="close mb-3" id="closeSignUpCard" style="margin-top: -0.5rem;">
+                        <span aria-hidden="true">&times;</span>
+                    </a>
+                    <div class="logo-slogen">
+                        <div class="form-logo ml-3 mt-3" style="font-family: BauhausStd-Light; letter-spacing: 0.4rem;font-size: 3rem; color:#00bffe;">
+                            PIXBOOST
+                        </div>
+                        <div class="slogen mb-3">
+                            <p class="text-uppercase" style="font-family: ChickenAOE;">Find Beauty!</p>
+                            
+                        </div>
+                    </div>
+                    <div class="logInComponent my-4 mx-3">
+                        <form>
+                            <div class="input-group mt-3">
+                                <input type="text" class="form-control" id="logIn" aria-label="Text input with dropdown button" placeholder="邮箱或手机号">
+                                <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button">获取验证码</button>
+                                </div>
+                            </div>
+                            
+                            <div class="input-group mt-3">
+                                <input type="text" class="form-control" id="logIn" aria-label="Text input with dropdown button" placeholder="验证码">
+                            </div>
+                            <ul class="errorList_SIGNUP"></ul>
+                            <button class="btn btn-primary btn-block">立即注册</button>
+                            <div class="text-right"> 
+                                <a href="javascript:;" class="forgetPassword" onclick="openLogIn();">
+                                    <small>已有账户？</small>
+                                </a>
+                                
+                            </div>
+                    </div>
+                            
+                            
+                    </form> 
+        </div>
+
         <div class="d-flex flex-column floatButtonGroup" style="position:absolute ; right: 0; z-index: 10; top:calc(35vh);">
             <div class="mb-3 p-2 floatButton">
-                <a id="log_in" href="javascript:;" style="display: block; width: 2rem; height: 2rem;" onclick="">
+                <a id="login" href="javascript:;" style="display: block; width: 2rem; height: 2rem;">
                     <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1548088368056" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4871" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48"><defs><style type="text/css"></style></defs><path d="M634.342 589.022c105.11 41.118 185.376 133.808 207.609 249.08 2.965 15.374-7.095 30.241-22.469 33.206-15.374 2.965-30.24-7.094-33.205-22.468-25.155-130.425-139.813-226.122-274.22-226.122-134.407 0-249.067 95.7-274.22 226.125-2.965 15.374-17.831 25.434-33.205 22.47-15.374-2.966-25.434-17.832-22.469-33.206 22.23-115.275 102.498-207.967 207.61-249.085-76.52-42.89-128.237-124.79-128.237-218.77 0-138.402 112.16-250.602 250.522-250.602 138.36 0 250.52 112.2 250.52 250.602 0 93.98-51.716 175.88-128.236 218.77z m71.537-218.77c0-107.092-86.78-193.902-193.821-193.902-107.043 0-193.822 86.81-193.822 193.902 0 107.09 86.779 193.9 193.822 193.9 107.042 0 193.82-86.81 193.82-193.9z" p-id="4872" fill="#ffffff"></path></svg>
                 </a>
             </div>
             <div class="mb-3 p-2 floatButton">
-                <a id="sign-up" href="javascript:;" style="display: block; width: 2rem; height: 2rem;">
+                <a id="signup" href="javascript:;" style="display: block; width: 2rem; height: 2rem;">
                         <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1548091906405" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5717" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48"><defs><style type="text/css"></style></defs><path d="M632.555 583.662a334.724 334.724 0 0 1 34.43 15.764c13.844 7.312 19.14 24.463 11.828 38.308-7.312 13.845-24.463 19.14-38.308 11.829-39.825-21.033-84.256-32.18-130.354-32.18-134.46 0-249.156 95.628-274.315 225.944-2.968 15.373-17.837 25.43-33.21 22.462-15.374-2.968-25.43-17.837-22.462-33.21 22.237-115.181 102.51-207.796 207.629-248.892-76.518-42.868-128.233-124.698-128.233-218.602 0-138.316 112.198-250.435 250.592-250.435 138.392 0 250.59 112.12 250.59 250.435 0 93.886-51.695 175.702-128.187 218.577z m71.487-218.577c0-106.992-86.804-193.735-193.89-193.735-107.088 0-193.892 86.742-193.892 193.735 0 106.992 86.804 193.734 193.892 193.734 107.086 0 193.89-86.743 193.89-193.734z m12.694 346.77V626.83a28.26 28.26 0 0 1 3.87-14.324 28.468 28.468 0 0 1 10.175-10.174 28.26 28.26 0 0 1 14.324-3.87 28.26 28.26 0 0 1 14.324 3.87 28.468 28.468 0 0 1 10.174 10.174 28.26 28.26 0 0 1 3.87 14.324v85.025h84.179c15.656 0 28.348 12.692 28.348 28.349 0 15.656-12.692 28.348-28.348 28.348h-84.18v84.08a28.26 28.26 0 0 1-3.87 14.324 28.468 28.468 0 0 1-10.173 10.174 28.26 28.26 0 0 1-14.324 3.87 28.26 28.26 0 0 1-14.324-3.87 28.468 28.468 0 0 1-10.175-10.174 28.26 28.26 0 0 1-3.87-14.324v-84.08h-85.124c-15.656 0-28.348-12.692-28.348-28.348 0-15.657 12.692-28.349 28.348-28.349h85.124z" p-id="5718" fill="#ffffff"></path></svg>
 
                 </a>
             </div>
             <div class="mb-3 p-2 floatButton">
-                <a id="enter_homepae" href="javascript:;" style="display: block; width: 2rem; height: 2rem;">
+                <a id="enter_homepae" href="home.html" style="display: block; width: 2rem; height: 2rem;">
                         <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1548092226300" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6388" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48"><defs><style type="text/css"></style></defs><path d="M318.80593 957.834045l-59.445904-59.443857 386.393257-386.391211L259.360026 125.609813l59.445904-59.443857 445.833021 445.833021L318.80593 957.834045z" p-id="6389" fill="#ffffff"></path></svg>
                 </a>
             </div>
@@ -62,8 +158,98 @@
             
         </div>
     </div>
+
     <script>
-        
+        function openLogIn(){
+            
+            if(!$(".logInCard").hasClass("in-use")){
+                    console.log("logIn_NOTused_OPEN");
+                    if($(".signUpCard").hasClass("in-use")){
+                        $(".signUpCard").fadeOut(500,function(){
+                            $(".logInCard").fadeIn(500).addClass("in-use");
+                        }).removeClass("in-use");
+                    }else{
+                        $(".logInCard").fadeIn(500).addClass("in-use");
+                    }
+            }
+        }
+
+        function openSignUp(){
+            if(!$(".signUpCard").hasClass("in-use")){
+                console.log("signup_notUsed_OPEN");
+                if($(".logInCard").hasClass("in-use")){
+                    $(".logInCard").fadeOut(500,function(){
+                        $(".signUpCard").fadeIn(500).addClass("in-use");
+                    }).removeClass("in-use");
+                }else{
+                    $(".signUpCard").fadeIn(500).addClass("in-use");
+                }
+            }
+        }
+
+        $(document).ready(function(){
+            console.log("ready");
+            $(".search-icon").click(function(){
+                if($(".search-content").hasClass("in-use")){
+                    console.log("fadeout");
+                    $(".search-content").fadeOut(500);
+                    $(".search-content").removeClass("in-use");
+                }else{
+                    console.log("fadein");
+                    $(".search-content").fadeIn(500);
+                    $(".search-content").addClass("in-use");
+                }
+                
+            });
+            $("#login").click(function(){
+                
+                if(!$(".logInCard").hasClass("in-use")){
+                    console.log("logIn_NOTused_OPEN");
+                    if($(".signUpCard").hasClass("in-use")){
+                        $(".signUpCard").fadeOut(500,function(){
+                            $(".logInCard").fadeIn(500).addClass("in-use");
+                        }).removeClass("in-use");
+                    }else{
+                        $(".logInCard").fadeIn(500).addClass("in-use");
+                    }
+                }else{
+                    console.log("logIn_used_CLOSE");
+                    $(".logInCard").fadeOut(500).removeClass("in-use");
+                }
+            });
+
+            $("#signup").click(function(){
+                if($(".signUpCard").hasClass("in-use")){
+                    $(".signUpCard").fadeOut(500).removeClass("in-use");
+                }else{
+                    if($(".logInCard").hasClass("in-use")){
+                        $(".logInCard").fadeOut(500,function(){
+                            $(".signUpCard").fadeIn(500).addClass("in-use");
+                        }).removeClass("in-use");
+                    }else{
+                        $(".signUpCard").fadeIn(500).addClass("in-use");
+                    }
+                    
+                }
+            });
+
+            $("#closeLoginCard").click(function(){
+                if($(".logInCard").hasClass("in-use")){
+                    console.log("logInCardUSED");
+                    $(".logInCard").fadeOut(500).removeClass("in-use");
+                }
+            });
+
+            $("#closeSignUpCard").click(function(){
+                if($(".signUpCard").hasClass("in-use")){
+                    console.log("SignUpCardUSED");
+                    $(".signUpCard").fadeOut(500).removeClass("in-use");
+                }
+            });
+
+
+            
+        });
     </script>
 </body>
 </html>
