@@ -6,7 +6,6 @@
     margin-right: -15px;
     height: calc(100vh);
     background-repeat: no-repeat;
-    background-image: url(../res/img/index/003.jpg);
     background-size: cover;
     z-index: -1;
 }
@@ -18,18 +17,20 @@
     top: calc(5vh);
 }
 .logo{
+    font-family:BauhausStd-Light;
     position: relative; 
-    stroke: 1px #323232;
-    -webkit-text-stroke: 1px #323232; 
-    font: 2rem sans-serif; 
-    font-weight: 600;
-    color:transparent; 
+    /* stroke: 1px #ffffff;
+    -webkit-text-stroke: 1px #ffffff;  */
+    font-size: 2rem; 
+    font-weight: 300;
+    color:white;
+    /* text-shadow: 5px 5px 5px #323232; */
     letter-spacing: 0.5rem;
 }
 
 .logo:hover{
-    color:transparent;
     cursor: default;
+    color: white;
 }
 
 .user-description{
@@ -37,7 +38,7 @@
 }
 
 .user-icon{
-    background-image: url(../res/img/index/004.jpg);
+    background-image: url(../res/img/index/000.jpg);
     background-size: cover;
     width: 3rem;
     height: 3rem;
@@ -68,7 +69,9 @@
 
 .floatButton{
     height: 4rem;
-    background: rgba(48, 47, 47, 0.7)
+    background: rgba(48, 47, 47, 0.7);
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
 }
 
 .form-control{

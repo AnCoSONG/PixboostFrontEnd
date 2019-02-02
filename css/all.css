@@ -59,6 +59,12 @@ html {
   font-family: ChickenAOE;
   src: url(../res/font/ChickenScratchAOE.otf);
 }
+
+@font-face{
+  font-family: DebevicCircular;
+  src: url(../res/font/DebevicCircular\ Regular.TTF);
+}
+
 a{
   white-space:nowrap;
 }
@@ -66,3 +72,7 @@ a{
 a:hover{
   text-decoration: none;
 }
+
+/* .textshadow{
+  text-shadow: 5px 5px 5px #323232;
+} */
